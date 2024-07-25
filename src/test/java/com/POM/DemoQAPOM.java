@@ -1,5 +1,7 @@
 package com.POM;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -70,4 +72,28 @@ public class DemoQAPOM extends BasePage
 	
 	@FindBy(xpath = "//span[text()='Copy']")
 	public WebElement copyOption;
+	
+	@FindBy(id = "tabButton")
+	public WebElement newTabBtn;
+	
+	@FindBy(id = "windowButton")
+	public WebElement newWindowBtn;
+	
+	@FindBy(id = "messageWindowButton")
+	public WebElement messageWindowButton;
+	
+	@FindBy(xpath = "//body")
+	public WebElement newWindowMessage;
+	
+	@FindBy(id = "dateOfBirthInput")
+	public WebElement dateOfBirthInput;
+	
+	@FindBy(xpath = "//select[@class='react-datepicker__month-select']")
+	public WebElement monthDropDown;
+	
+	@FindBy(xpath = "//select[@class='react-datepicker__year-select']")
+	public WebElement yearDropDown;
+	
+	@FindBy(xpath = "//div[@class='react-datepicker__month']/div/div")
+	public List<WebElement> allCalendarDays;
 }

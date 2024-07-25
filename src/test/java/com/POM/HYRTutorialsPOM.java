@@ -25,4 +25,16 @@ public class HYRTutorialsPOM extends BasePage
 	
 	@FindBy(id = "promptBox")
 	public WebElement promptAlertBox;
+	
+	@FindBy(id = "newWindowBtn")                       
+	public WebElement newWindowBtn;
+	
+	@FindBy(id = "Header1_headerimg")
+	public WebElement pageHeader;
+	
+	@FindBy(id = "newWindowsBtn")
+	public WebElement newMultipleWindowsBtn;
+	
+	@FindBy(xpath = "//h1[@class='post-title entry-title']")
+	public WebElement titleInsideMultipleWindow;
 }

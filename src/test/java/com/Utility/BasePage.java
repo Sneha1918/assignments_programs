@@ -23,7 +23,7 @@ public class BasePage
 	{
 		try 
 		{
-			File objFile = new File(System.getProperty("user.dir")+"//src//test//resources//Config.Properties");
+			File objFile = new File(System.getProperty("user.dir")+"//src//test//resources//Configuration.properties");
 			FileInputStream objInputFile = new FileInputStream(objFile);
 			objProp = new Properties();
 			objProp.load(objInputFile);
